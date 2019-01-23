@@ -354,10 +354,11 @@ class Video extends Component {
       playInBackground,
       playWhenInactive,
       controlDuration,
+      videoHeight
     } = this.props
 
     const inline = {
-      height: inlineHeight,
+      height: videoHeight ? videoHeight : inlineHeight,
       alignSelf: 'stretch'
     }
 
